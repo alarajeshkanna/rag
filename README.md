@@ -29,3 +29,6 @@ python main2.py \
   --loader pdf \
   --chunking semantic \
   --embedding sentence-transformers/all-MiniLM-L6-v2
+
+
+python unit_test_kg_manager.py
