@@ -1,4 +1,20 @@
-python main.py \
+Process a single document:
+python main1.py --source https://example.com --loader URL --chunking SEMANTIC --embedding BGE_LARGE
+
+Process a batch of documents:
+python main.py --batch documents.json --chunking MARKDOWN
+
+Interactive mode:
+python main1.py --interactive
+
+With custom config:
+python main1.py --config custom_config.json --source document.pdf
+
+
+
+
+
+python main2.py \
   --source "https://example.com/article" \
   --loader url \
   --chunking recursive \
@@ -8,7 +24,7 @@ python main.py \
   --extract_keywords
 
 
-python main.py \
+python main2.py \
   --source "./data/sample.pdf" \
   --loader pdf \
   --chunking semantic \
